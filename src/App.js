@@ -9,12 +9,12 @@ export default function App() {
 e.preventDefault()
 console.log(todo)
   if(todo !== " "){
-    setTodos([{id:Math.floor(Math.random() *100),todo},...todos])
+    setTodos([{id:`${todo}-${Date.now()}`,todo},...todos])
   }
 setTodo("")
   }
     function handleDelete(id){
-const deltodo=todos.filter((del)=>{del.id !== id});
+const deltodo=todos.filter((del)=>del.id !== id);
 setTodos([...deltodo])
     }
   return (
@@ -30,9 +30,9 @@ setTodos([...deltodo])
         todos.map((t)=>(
           <li>
         <div className="todo_card">
-        <span className="todo_text">{t.todo}</span>
+        <span className="todo_text" key={t.id}>{t.todo}</span>
         <button className="edit_btn">edit</button>
-        <button className="delete_btn" onClick={handleDelete}>delete</button>
+        <button className="delete_btn" onClick={()=>{handleDelete(t.id)}}>delete</button>
         </div>
       </li>
         ))
