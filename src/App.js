@@ -8,7 +8,7 @@ export default function App() {
   function handleSubmit(e){
 e.preventDefault()
 console.log(todo)
-  if(todo !== " "){
+  if(todo !== ""){
     setTodos([{id:`${todo}-${Date.now()}`,todo},...todos])
   }
 setTodo("")
