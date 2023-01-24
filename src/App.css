@@ -14,11 +14,11 @@
  
 
 .submit_btn {
-  height: 30px;
-  width: 60px;
+  height: 32px;
+  width: 70px;
   border-radius: 20px;
-  background-color: rgb(204, 69, 209);
-  border: 1px solid rgb(53, 209, 61);
+  background-color: rgb(42, 182, 42);
+  border: 1px solid rgb(80, 194, 80);
   color: azure;
   cursor: pointer;
 }
@@ -32,12 +32,13 @@
   width: 400px;
   border-radius: 20px;
   display: flex;align-items: center;
-  background-color: rgb(192, 91, 184);
+  background-color: rgb(34, 137, 197);
   margin: 10px;
 }
 .todo_text {
   flex: 1;
   margin-left: 10px;
+  color: aliceblue;
 }
 .ul {
   list-style-type: none;
@@ -57,22 +58,31 @@
   height: 30px;
   width: 300px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
+  padding-left: 15px;
 }
 
 .edit_btn {
   height: 30px;
-  width: 40px;
+  width: 50px;
   border-radius: 20px;
-  background-color: rgba(228, 226, 106, 0.808);
-  border: 1px yellow solid;
+  background-color: rgba(255, 252, 81, 0.925);
+  border: 1px rgba(255, 252, 81, 0.925);
   margin-right: 10px;
+  cursor: pointer;
+  
+}
+.edit_btn :focus{
+  background-color: rgba(250, 246, 18, 0.925);
+  border: 1px rgb(253, 114, 0) solid;
 }
 .delete_btn {
   height: 30px;
   width: 60px;
   border-radius: 20px;
-  background-color: rgb(201, 95, 130);
-  border: 1px red solid;
+  background-color: rgb(250, 43, 43);
+  border: 1px rgb(250, 43, 43);
   margin-right: 10px;
+  cursor: pointer;
+  color: aliceblue;
 }
