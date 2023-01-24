@@ -8,7 +8,7 @@ export default function App() {
 
   function handleSubmit(e){
 e.preventDefault()
-console.log(todo)
+
 if(editId){
   const editTodo=todos.find((i)=>i.id===editId)
   const updatedTodos=todos.map((t)=>
@@ -21,12 +21,13 @@ if(editId){
   setTodo("")
   return;
 }
+
   if(todo !== ""){
     setTodos([{id:Math.floor(Math.random() *100)
-      ,todo},...todos])
-  }
+      ,todo},...todos])}
 setTodo("")
   }
+
     function handleDelete(id){
 const deltodo=todos.filter((del)=>del.id !== id);
 setTodos([...deltodo])
