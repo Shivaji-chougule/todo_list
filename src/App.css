@@ -5,7 +5,7 @@
 .card {
   height: 500px;
   width: 500px;
-  background-image: linear-gradient(rgb(214, 214, 214), rgb(203, 104, 233));
+  background-image: linear-gradient(rgb(200, 112, 226), rgb(156, 224, 236));
   display: flex;
   flex-direction: column;
   align-items: center;
