@@ -34,7 +34,7 @@ setTodos([...deltodo])
     }
     function handleEdit(id){
       const editodo=todos.find((edi)=>edi.id === id)
-      setTodo(editodo.todo)
+      setTodo([editodo.todo])
       setEditId(id)
     }
   return (
